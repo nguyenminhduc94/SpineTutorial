@@ -17,7 +17,8 @@ public class SpineboyLearningInput : MonoBehaviour {
 	void Update () {
 		currentSpeed = Input.GetAxisRaw (horizontal);
 		model.TryMove (currentSpeed);
+		if (Input.GetButtonDown (jump)) {
+			model.TryJump ();
+		}
 	}
-
-
 }

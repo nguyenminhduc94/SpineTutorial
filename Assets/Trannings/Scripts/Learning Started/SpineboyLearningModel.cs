@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Spine.Unity;
 using Spine;
+using Spine.Unity.Examples;
 
 public class SpineboyLearningModel : MonoBehaviour {
 
@@ -11,6 +12,7 @@ public class SpineboyLearningModel : MonoBehaviour {
 	[Range(-1f,1f)]
 	public float currentSpeed;
 	public bool facingLeft;
+
 	void Start () {
 
 	}
@@ -25,10 +27,14 @@ public class SpineboyLearningModel : MonoBehaviour {
 		if (speed != 0f) {
 			facingLeft = (currentSpeed < 0f);
 		}
-		if(state != SpineLearningBodyState.Jumping)
+		if (state != SpineLearningBodyState.Jumping)
 			state = (speed == 0) ? SpineLearningBodyState.Idle : SpineLearningBodyState.Running;
 	}
-		
+
+	public void TryJump(){
+		if (state == SpineLearningBodyState.Jumping) return;
+		state = SpineLearningBodyState.Jumping;
+	}
 }
 public enum SpineLearningBodyState{
 	Idle,

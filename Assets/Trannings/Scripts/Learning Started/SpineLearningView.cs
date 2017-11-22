@@ -20,6 +20,9 @@ public class SpineLearningView : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (skeletonAnimation == null)return;
+		if (model == null)return;
+
 		if(previousViewState != SpineLearningBodyState.Jumping)
 			Turn (model.facingLeft);
 		
@@ -33,10 +36,14 @@ public class SpineLearningView : MonoBehaviour {
 		var newModelState = model.state;
 		Debug.Log (model.state);
 		string nextAnimation;
-		if (newModelState == SpineLearningBodyState.Running)
-			nextAnimation = run;
-		else
-			nextAnimation = idle;
+		if(model.state == SpineLearningBodyState.Jumping){
+			nextAnimation = jump;
+		}else{
+			if (newModelState == SpineLearningBodyState.Running)
+				nextAnimation = run;
+			else
+				nextAnimation = idle;
+		}
 		skeletonAnimation.AnimationState.SetAnimation (0, nextAnimation, true);
 
 	}
