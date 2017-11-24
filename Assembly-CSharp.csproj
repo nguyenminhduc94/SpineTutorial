@@ -163,6 +163,7 @@
      <Compile Include="Assets\Trannings\Scripts\Learning Started\RaptorLearning.cs" />
      <Compile Include="Assets\Trannings\Scripts\Learning Started\SpineLearningTwo.cs" />
      <Compile Include="Assets\Trannings\Scripts\Learning Started\SpineLearningView.cs" />
+     <Compile Include="Assets\Trannings\Scripts\Learning Started\SpineboyLearningController.cs" />
      <Compile Include="Assets\Trannings\Scripts\Learning Started\SpineboyLearningInput.cs" />
      <Compile Include="Assets\Trannings\Scripts\Learning Started\SpineboyLearningModel.cs" />
      <None Include="Assets\Spine\spine-unity\Editor\Resources\SpineAssetDatabaseMarker.txt" />

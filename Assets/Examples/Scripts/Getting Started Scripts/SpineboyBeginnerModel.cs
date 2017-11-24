@@ -56,7 +56,6 @@ namespace Spine.Unity.Examples {
 
 		public void TryShoot () {
 			float currentTime = Time.time;
-
 			if (currentTime - lastShootTime > shootInterval) {
 				lastShootTime = currentTime;
 				if (ShootEvent != null) ShootEvent();	// Fire the "ShootEvent" event.

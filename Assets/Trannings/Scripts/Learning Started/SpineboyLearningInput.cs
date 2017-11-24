@@ -7,6 +7,7 @@ public class SpineboyLearningInput : MonoBehaviour {
 	public SpineboyLearningModel model;
 	public string horizontal = "Horizontal";
 	public string jump = "Jump";
+	public string attackbutton = "Fire1";
 	public float currentSpeed;
 	// Use this for initialization
 	void Start () {
@@ -19,6 +20,9 @@ public class SpineboyLearningInput : MonoBehaviour {
 		model.TryMove (currentSpeed);
 		if (Input.GetButtonDown (jump)) {
 			model.TryJump ();
+		}
+		if(Input.GetButton(attackbutton)){
+			model.TryShoot ();
 		}
 	}
 }

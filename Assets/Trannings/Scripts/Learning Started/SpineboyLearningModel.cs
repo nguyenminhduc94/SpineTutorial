@@ -5,6 +5,7 @@ using Spine.Unity;
 using Spine;
 using Spine.Unity.Examples;
 
+
 public class SpineboyLearningModel : MonoBehaviour {
 
 	// Use this for initialization
@@ -13,6 +14,9 @@ public class SpineboyLearningModel : MonoBehaviour {
 	public float currentSpeed;
 	public bool facingLeft;
 
+	public event System.Action EventShoot;
+	public float shootInterval;
+	float lastshootTime;
 	void Start () {
 
 	}
@@ -32,8 +36,24 @@ public class SpineboyLearningModel : MonoBehaviour {
 	}
 
 	public void TryJump(){
-		if (state == SpineLearningBodyState.Jumping) return;
+		if (state == SpineLearningBodyState.Jumping)
+			return;
+		else
+			StartCoroutine (StartJump());
+	}
+
+	public void TryShoot(){
+		float currentTime = Time.time;
+		if ((currentTime - lastshootTime) > shootInterval) {
+			lastshootTime = currentTime;
+			if (EventShoot != null) EventShoot ();
+		}
+	}
+	IEnumerator StartJump(){
+		
 		state = SpineLearningBodyState.Jumping;
+		yield return new WaitForSeconds (1.25f);
+		state = SpineLearningBodyState.Idle;
 	}
 }
 public enum SpineLearningBodyState{

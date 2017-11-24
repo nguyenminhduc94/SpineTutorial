@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Examples/Getting Started/4 Object Oriented Sample.unity
+- path: Assets/Trannings/Learning Started/Learning Object Oriented Sample.unity
   isLoaded: 1
   isActive: 1
