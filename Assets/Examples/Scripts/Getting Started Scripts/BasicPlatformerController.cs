@@ -126,6 +126,7 @@ namespace Spine.Unity.Examples {
 				if (input.x != 0) {
 					velocity.x = Mathf.Abs(input.x) > 0.6f ? runSpeed : walkSpeed;
 					velocity.x *= Mathf.Sign(input.x);
+
 				}
 
 				if (jumpInterrupt) {

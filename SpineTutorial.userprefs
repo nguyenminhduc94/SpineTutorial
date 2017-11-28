@@ -1,9 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Trannings/Scripts/Learning Started/SpineboyLearningController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Trannings/Scripts/Learning Started/Warrior Scripts/PlayerBegginerInput.cs">
     <Files>
-      <File FileName="Assets/Trannings/Scripts/Learning Started/SpineboyLearningController.cs" Line="10" Column="2" />
-      <File FileName="Assets/Spine/spine-csharp/Bone.cs" Line="42" Column="2" />
+      <File FileName="Assets/Trannings/Scripts/Learning Started/Warrior Scripts/PlayerBegginerInput.cs" Line="52" Column="28" />
+      <File FileName="Assets/Examples/Scripts/Getting Started Scripts/BasicPlatformerController.cs" Line="43" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

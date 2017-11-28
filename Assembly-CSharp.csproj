@@ -166,6 +166,7 @@
      <Compile Include="Assets\Trannings\Scripts\Learning Started\SpineBoy Scripts\SpineboyLearningController.cs" />
      <Compile Include="Assets\Trannings\Scripts\Learning Started\SpineBoy Scripts\SpineboyLearningInput.cs" />
      <Compile Include="Assets\Trannings\Scripts\Learning Started\SpineBoy Scripts\SpineboyLearningModel.cs" />
+     <Compile Include="Assets\Trannings\Scripts\Learning Started\Warrior Scripts\HeroScripts.cs" />
      <Compile Include="Assets\Trannings\Scripts\Learning Started\Warrior Scripts\PlayerBegginerInput.cs" />
      <Compile Include="Assets\Trannings\Scripts\Learning Started\Warrior Scripts\PlayerControllerModel.cs" />
      <None Include="Assets\Spine\spine-unity\Editor\Resources\SpineAssetDatabaseMarker.txt" />
