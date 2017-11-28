@@ -96,7 +96,7 @@
      <None Include="Assets\Examples\Spine\Raptor\raptor.atlas.txt" />
      <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteLighting.cginc" />
      <None Include="Assets\Spine\spine-unity\Modules\SlotBlendModes\Spine-Skeleton-PMA-Screen.shader" />
-     <None Include="Assets\Examples\Spine\spineboy-unity\spineboy.atlas.txt" />
+     <None Include="Assets\Examples\Spine\Spineunitygirl\spineboy-unity\spineboy.atlas.txt" />
      <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpriteUnlit.cginc" />
      <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteUnlit.cginc" />
      <None Include="Assets\Examples\Spine\FootSoldier\license.txt" />
