@@ -1,11 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Trannings/Scripts/Learning Started/SpineLearningView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Trannings/Scripts/Learning Started/SpineboyLearningController.cs">
     <Files>
-      <File FileName="Assets/Trannings/Scripts/Learning Started/SpineboyLearningModel.cs" Line="31" Column="39" />
-      <File FileName="Assets/Trannings/Scripts/Learning Started/SpineLearningView.cs" Line="39" Column="3" />
-      <File FileName="Assets/Examples/Scripts/Getting Started Scripts/SpineboyBeginnerModel.cs" Line="84" Column="43" />
-      <File FileName="Assets/Examples/Scripts/Getting Started Scripts/SpineboyBeginnerView.cs" Line="88" Column="25" />
+      <File FileName="Assets/Trannings/Scripts/Learning Started/SpineboyLearningController.cs" Line="10" Column="2" />
+      <File FileName="Assets/Spine/spine-csharp/Bone.cs" Line="42" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
