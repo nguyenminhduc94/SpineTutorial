@@ -51,14 +51,14 @@ MonoBehaviour:
     width: 773
     height: 349
   m_SceneLighting: 1
-  lastFramingTime: 8784.53488600254
+  lastFramingTime: 4959.499384939671
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.4846894, y: 0.12559417, z: 0}
+    m_Target: {x: -3.3857455, y: -0.5204371, z: 0}
     speed: 2
-    m_Value: {x: 0.4846894, y: 0.12559417, z: 0}
+    m_Value: {x: -3.3857455, y: -0.5204371, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -85,9 +85,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 13.79564
+    m_Target: 15.260467
     speed: 2
-    m_Value: 13.79564
+    m_Value: 15.260467
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -164,8 +164,8 @@ MonoBehaviour:
     y: 0
     width: 202
     height: 370
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -220,7 +220,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
   m_ExpandedScenes:
-  - 4 Object Oriented Sample
+  - Learning Platformer
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -242,14 +242,14 @@ MonoBehaviour:
     y: 0
     width: 777
     height: 370
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
-  - {fileID: 2}
   - {fileID: 8}
-  m_Selected: 0
-  m_LastSelected: 1
+  - {fileID: 2}
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -306,18 +306,18 @@ MonoBehaviour:
       y: 17
       width: 773
       height: 332
-    m_Scale: {x: 0.3692578, y: 0.36925778}
-    m_Translation: {x: 386.5, y: 166.015}
+    m_Scale: {x: 0.36888888, y: 0.36888888}
+    m_Translation: {x: 386.5, y: 166}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1046.6942
-      y: -449.59106
-      width: 2093.3884
-      height: 899.1009
+      x: -1047.741
+      y: -450
+      width: 2095.482
+      height: 900
     m_MinimalGUI: 1
   m_defaultScale: 0.36888888
   m_TargetTexture: {fileID: 0}
@@ -391,19 +391,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Examples/Scripts/Getting Started Scripts
+    - Assets/Trannings/Scripts/Learning Started/Warrior Scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Examples/Scripts/Getting Started Scripts
+  - Assets/Trannings/Scripts/Learning Started/Warrior Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Volumes/Data/Unity2D/LearningUnity2D/SpineTutorial
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 13.79834}
-    m_SelectedIDs: f0260000
-    m_LastClickedID: 9968
-    m_ExpandedIDs: 0000000066260000fc26000058270000782700008e270000bc270000c02700008428000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 663}
+    m_SelectedIDs: 9c270000
+    m_LastClickedID: 10140
+    m_ExpandedIDs: 00000000722600000a270000662700006a270000862700008e2700009e270000aa270000be270000ce270000d2270000322800003628000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -431,7 +431,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000066260000fc26000058270000782700008e270000bc270000c027000084280000
+    m_ExpandedIDs: 00000000722600000a270000662700006a270000862700008e2700009e270000aa270000be270000ce270000d22700003228000036280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -459,7 +459,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 
+    m_ExpandedInstanceIDs: 00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -475,7 +475,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 9}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0

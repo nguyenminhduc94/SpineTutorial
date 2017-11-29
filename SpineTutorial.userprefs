@@ -2,8 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Trannings/Scripts/Learning Started/Warrior Scripts/PlayerBegginerInput.cs">
     <Files>
-      <File FileName="Assets/Trannings/Scripts/Learning Started/Warrior Scripts/PlayerBegginerInput.cs" Line="52" Column="28" />
-      <File FileName="Assets/Examples/Scripts/Getting Started Scripts/BasicPlatformerController.cs" Line="43" Column="3" />
+      <File FileName="Assets/Trannings/Scripts/Learning Started/Warrior Scripts/PlayerBegginerInput.cs" Line="112" Column="6" />
+      <File FileName="Assets/Examples/Scripts/Getting Started Scripts/BasicPlatformerController.cs" Line="123" Column="36" />
+      <File FileName="Assets/Spine/spine-unity/Modules/SkeletonUtility Modules/SkeletonUtilityGroundConstraint.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

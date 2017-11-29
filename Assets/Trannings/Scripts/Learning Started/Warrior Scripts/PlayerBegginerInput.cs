@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime.Remoting.Messaging;
 using Spine.Unity;
-using System;
 using UnityEditorInternal;
 
 namespace Unity.Learning{
@@ -14,6 +13,7 @@ namespace Unity.Learning{
 		public string XAxis = "Horizontal";
 		public string YAxis = "Vertical";
 		public string JumpButton = "Jump";
+		public bool wasGrounded, crouching;
 
 		[Header("Moving")]
 		public float walkSpeed = 1.5f;
@@ -39,9 +39,14 @@ namespace Unity.Learning{
 		public string fallName = "Fall";
 		[SpineAnimation(dataField: "skeletonAnimation")]
 		public string crouchName = "Crouch";
+		[SpineAnimation(dataField: "skeletonAnimation")]
+		public string attackName = "Attack";
 
 		[Header("Audio")]
 		public AudioSource jumpSource,walkSource,hardfallSource;
+
+		[Header("Effects")]
+		public ParticleSystem landParticles;
 
 		[SpineEvent]
 		public string footstepEventName = "Footstep";
@@ -50,7 +55,8 @@ namespace Unity.Learning{
 		private Vector3 velocity = default(Vector3);
 		CharacterController controller;
 		float forceCrouchEndTime;
-		bool wasGrounded;
+
+
 
 		void Awake(){
 			controller = GetComponent<CharacterController> ();
@@ -79,7 +85,8 @@ namespace Unity.Learning{
 			input.y = Input.GetAxisRaw (YAxis);
 			float dt = Time.deltaTime;
 
-			bool crouching = (controller.isGrounded && input.y < -0.5f);
+			crouching = (controller.isGrounded && input.y < -0.5f);
+
 			if (!crouching) {
 				if(Input.GetButton(JumpButton) && controller.isGrounded){
 					velocity.y = jumpSpeed;
@@ -96,11 +103,24 @@ namespace Unity.Learning{
 					velocity.x = 0;
 				}
 			}
+
+			if(wasGrounded){
+				if (controller.isGrounded) {
+					hardfallSource.Play ();
+					landParticles.Play ();
+				} else {
+					velocity.y = Random.Range (-1f,velocity.y);
+					Debug.Log (velocity.y);
+				}
+				wasGrounded = false;
+			}
+
 			var gravityDeltaVelocity = Physics.gravity * gravityScale * dt;
 			velocity += gravityDeltaVelocity;
 			controller.Move (velocity*dt);
 
 			if (controller.isGrounded) {
+				
 				if (crouching) {
 					skeletonAnimation.AnimationName = crouchName;
 				} else {
@@ -114,14 +134,8 @@ namespace Unity.Learning{
 				skeletonAnimation.AnimationName = velocity.y > 0 ? jumpName : fallName;
 			}
 
-			if(wasGrounded && controller.isGrounded){
-				hardfallSource.Play ();
-				wasGrounded = false;
-			}
-
 			if(input.x != 0){
 				skeletonAnimation.skeleton.flipX = input.x < 0;
-
 			}
 		}
 	}

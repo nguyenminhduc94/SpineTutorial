@@ -119,6 +119,7 @@ namespace Spine.Unity.Examples {
 					jumpAudioSource.Play();
 					velocity.y = jumpSpeed;
 					jumpEndTime = Time.time + jumpDuration;
+
 				} else {
 					jumpInterrupt |= Time.time < jumpEndTime && Input.GetButtonUp(JumpButton);
 				}
@@ -126,12 +127,12 @@ namespace Spine.Unity.Examples {
 				if (input.x != 0) {
 					velocity.x = Mathf.Abs(input.x) > 0.6f ? runSpeed : walkSpeed;
 					velocity.x *= Mathf.Sign(input.x);
-
 				}
 
 				if (jumpInterrupt) {
 					if (velocity.y > 0) {
 						velocity.y = Mathf.MoveTowards(velocity.y, 0, dt * jumpInterruptFactor);
+
 					} else { 
 						jumpInterrupt = false;
 					}
@@ -181,7 +182,6 @@ namespace Spine.Unity.Examples {
 
 			if (input.x != 0)
 				skeletonAnimation.Skeleton.FlipX = input.x < 0;
-			
 		}
 	}
 }
